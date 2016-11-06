@@ -1,24 +1,22 @@
 #include"Stack.h"
+#include"Stack.cpp"
 #include<iostream>
 #include<string>
-using namespace std;
+#include<math.h>
 
+using namespace std;
 
 int main()
 {
-	Stack myStack = Stack(3);
-	cout << "GetAllocated:" << myStack.GetAllocated();
-	myStack.Push(3);
-	myStack.Push(4);
+	Stack<int> myStack = Stack<int>(15);
 	myStack.Push(5);
 	myStack.Push(6);
-	cout << "GetAllocated:" << myStack.GetAllocated()<<endl;
-	cout << myStack.Peek() << endl;
-	cout << myStack.Pop() << endl;
-	cout << myStack.Peek() << endl;
-	cout << myStack.Pop() << endl;
-	cout << myStack.Peek() << endl;
-	cout << myStack.isEmpty() << endl;
+	myStack.Push(7);
+	myStack.Push(8);
+	myStack.Push(9);
+	cout << "Peek: " << myStack.Peek() << endl;
+	myStack.Pop();
+	cout << "GetAllocated: " << myStack.GetAllocated() << endl;
 	system("pause");
 	return 0;
 }
