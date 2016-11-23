@@ -2,11 +2,12 @@
 #ifndef DYNAMICARRAY_H
 #define DYNAMICARRAY_H
 
+template <class DataType>
 class DynamicArray
 {
 private:
 	int size;
-	int* data;
+	DataType* data;
 	int currentIndex;
 
 public:
@@ -14,10 +15,10 @@ public:
 	~DynamicArray();
 	DynamicArray(DynamicArray const & other);
 	DynamicArray& operator=(DynamicArray const & other);
-	void Add(int newElement);
+	void Add(DataType newElement);
 	void Remove();
 	int GetUsedElements();
-	int GetElement(int position);
+	DataType GetElement(int position);
 	int GetSize();
 	void Resize();
 	bool isFull();

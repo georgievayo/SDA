@@ -1,11 +1,11 @@
-#include "DynamicArray.h"
+#include "DynamicArray.cpp"
 #include<iostream>
 
 using namespace std;
 
 int main()
 {
-	DynamicArray myArray = DynamicArray();
+	DynamicArray<int> myArray = DynamicArray<int>();
 	myArray.Add(5);
 	myArray.Add(15);
 	myArray.Add(20);

@@ -3,21 +3,24 @@
 
 using namespace std;
 
-DynamicArray::DynamicArray()
+template<class DataType>
+DynamicArray<DataType>::DynamicArray()
 {
 	this->size = 2;
 	this->currentIndex = -1;
-	this->data = new int[this->size];
+	this->data = new DataType[this->size];
 }
 
-DynamicArray::~DynamicArray()
+template<class DataType>
+DynamicArray<DataType>::~DynamicArray()
 {
 	delete[] this->data;
 }
 
-DynamicArray::DynamicArray(DynamicArray const & other)
+template<class DataType>
+DynamicArray<DataType>::DynamicArray(DynamicArray const & other)
 {
-	this->data = new int[other.size];
+	this->data = new DataType[other.size];
 
 	for (int i = 0; i <= other.currentIndex; i++)
 	{
@@ -28,7 +31,8 @@ DynamicArray::DynamicArray(DynamicArray const & other)
 	this->size = other.size;
 }
 
-DynamicArray& DynamicArray::operator=(DynamicArray const & other)
+template<class DataType>
+DynamicArray<DataType>& DynamicArray<DataType>::operator=(DynamicArray<DataType> const & other)
 {
 	if (this != &other)
 	{
@@ -43,7 +47,8 @@ DynamicArray& DynamicArray::operator=(DynamicArray const & other)
 	return *this;
 }
 
-void DynamicArray::Add(int newElement)
+template<class DataType>
+void DynamicArray<DataType>::Add(DataType newElement)
 {
 	if (isFull())
 	{
@@ -53,9 +58,10 @@ void DynamicArray::Add(int newElement)
 	this->data[this->currentIndex] = newElement;
 }
 
-void DynamicArray::Resize()
+template<class DataType>
+void DynamicArray<DataType>::Resize()
 {
-	int* newData = new int[this->size * 2];
+	DataType* newData = new DataType[this->size * 2];
 	for (int i = 0; i < this->size; i++)
 	{
 		newData[i] = this->data[i];
@@ -65,9 +71,10 @@ void DynamicArray::Resize()
 	this->data = newData;
 }
 
-void DynamicArray::Remove()
+template<class DataType>
+void DynamicArray<DataType>::Remove()
 {
-	int* newData = new int[this->currentIndex];
+	DataType* newData = new DataType[this->currentIndex];
 	for (int i = 0; i < this->currentIndex; i++)
 	{
 		newData[i] = this->data[i];
@@ -78,22 +85,28 @@ void DynamicArray::Remove()
 	this->data = newData;
 }
 
-int DynamicArray::GetElement(int position)
+template<class DataType>
+DataType DynamicArray<DataType>::GetElement(int position)
 {
 	return this->data[position];
 }
 
-int DynamicArray::GetSize()
+
+template<class DataType>
+int DynamicArray<DataType>::GetSize()
 {
 	return this->size;
 }
 
-int DynamicArray::GetUsedElements()
+
+template<class DataType>
+int DynamicArray<DataType>::GetUsedElements()
 {
 	return this->currentIndex + 1;
 }
 
-bool DynamicArray::isFull()
+template<class DataType>
+bool DynamicArray<DataType>::isFull()
 {
 	return this->currentIndex + 1 >= this->size;
 }
