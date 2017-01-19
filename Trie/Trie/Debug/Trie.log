@@ -1,0 +1,5 @@
+﻿  Trie.cpp
+e:\university\втори курс\sda\trie\trie\trie.cpp(38): warning C4715: 'Trie::AddAsRootChild': not all control paths return a value
+e:\university\втори курс\sda\trie\trie\trie.cpp(58): warning C4715: 'Trie::AddWord': not all control paths return a value
+  Trie.vcxproj -> E:\University\Втори курс\SDA\Trie\Debug\Trie.exe
+  Trie.vcxproj -> E:\University\Втори курс\SDA\Trie\Debug\Trie.pdb (Partial PDB)
