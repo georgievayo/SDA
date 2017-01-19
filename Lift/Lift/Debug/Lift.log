@@ -1,0 +1,4 @@
+﻿  Lift.cpp
+e:\downloads\lift(1)\lift\lift\lift.cpp(39): warning C4018: '<': signed/unsigned mismatch
+  Lift.vcxproj -> E:\Downloads\Lift(1)\Lift\Debug\Lift.exe
+  Lift.vcxproj -> E:\Downloads\Lift(1)\Lift\Debug\Lift.pdb (Full PDB)
