@@ -1,0 +1,14 @@
+﻿  Tree.cpp
+  Pair.cpp
+  Node.cpp
+  Main.cpp
+c:\users\yoana\desktop\perfectbbst\perfectbbst\main.cpp(45): warning C4018: '<': signed/unsigned mismatch
+c:\users\yoana\desktop\perfectbbst\perfectbbst\main.cpp(78): warning C4018: '<': signed/unsigned mismatch
+c:\users\yoana\desktop\perfectbbst\perfectbbst\main.cpp(122): warning C4018: '<': signed/unsigned mismatch
+  DynamicArray.cpp
+  Generating Code...
+c:\users\yoana\desktop\perfectbbst\perfectbbst\tree.cpp(80): warning C4715: 'Tree<Pair>::Add': not all control paths return a value
+c:\users\yoana\desktop\perfectbbst\perfectbbst\tree.cpp(140): warning C4715: 'Tree<Pair>::Remove': not all control paths return a value
+c:\users\yoana\desktop\perfectbbst\perfectbbst\tree.cpp(178): warning C4715: 'Tree<Pair>::FindLeftMostNode': not all control paths return a value
+  PerfectBBST.vcxproj -> C:\Users\Yoana\Desktop\PerfectBBST\Debug\PerfectBBST.exe
+  PerfectBBST.vcxproj -> C:\Users\Yoana\Desktop\PerfectBBST\Debug\PerfectBBST.pdb (Partial PDB)
