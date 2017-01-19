@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ReversePolishNotation", "ReversePolishNotation\ReversePolishNotation.vcxproj", "{661D5F7A-C56C-4E75-811C-F37C5F16AA67}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{661D5F7A-C56C-4E75-811C-F37C5F16AA67}.Debug|Win32.ActiveCfg = Debug|Win32
+		{661D5F7A-C56C-4E75-811C-F37C5F16AA67}.Debug|Win32.Build.0 = Debug|Win32
+		{661D5F7A-C56C-4E75-811C-F37C5F16AA67}.Release|Win32.ActiveCfg = Release|Win32
+		{661D5F7A-C56C-4E75-811C-F37C5F16AA67}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
